@@ -274,6 +274,10 @@ def not_found(e):
 @app.route("/google8815b0e15504e06d.html")
 def google_site_verf():
     return render_template("google8815b0e15504e06d.html")
+
+@app.route('/ads.txt')
+def ads_txt():
+    return render_template('ads.txt')
     
 
 if __name__ == "__main__":
