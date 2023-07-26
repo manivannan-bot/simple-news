@@ -1,0 +1,9 @@
+{% extends 'wrapper.html' %}
+{% block title %}Science - NewsHint Tamil{% endblock %}
+{% block rellink %}tamil/science{% endblock %}
+{% block content %}
+<h2>அறிவியல்</h2>
+    {% for news in data %}
+        {% include "news-card-tm.html" %}
+    {% endfor %}
+{% endblock %}

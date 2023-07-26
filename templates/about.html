@@ -1,0 +1,37 @@
+{% extends 'wrapper.html' %}
+{% block title %}About{% endblock %}
+{% block rellink %}about{% endblock %}
+{% block content %}
+
+<div class="about-section" aria-label="About section of the website">
+    <h2 style="text-align: center;">ABOUT </h2>
+    <br>
+    <div style="font-family:Arial, Helvetica, sans-serif;margin: 0 auto;">
+        NewsHint is a personalized news aggregator. We deliver verified facts as instant news and present exciting news
+        articles
+        and stories through out website.
+        <br><br>
+        The NewsHint works by pulling in news from various syndication feeds or news publishing partners.
+        <br>
+        <br>
+        We draw news from trustworthy publishers out in the domain.
+<br>
+        <img src="{{url_for('static', filename='about.png')}}" width="100%" height="90%" alt="">
+        <br>
+        <br>
+        <h3>
+            WHY NEWS HINT?
+        </h3>
+
+        The Indian market has a vast space for a valuable news aggregator app. This can be a big advantage of news hints
+        to domain the area. <br>
+        <br>
+        
+        News hint stands out with AI, we're in it analysing user's interests and suggesting it.
+        <br>
+        <br>
+        it's always good to read and watch the news from multiple sources to understand current events.
+    </div>
+</div>
+
+{%endblock%}

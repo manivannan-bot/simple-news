@@ -1,0 +1,11 @@
+{% extends 'wrapper.html' %}
+{% block title %}Top- NewsHint Tamil{% endblock %}
+{% block rellink %}tamil/top{% endblock %}
+
+{% block content %}
+<h2>முக்கிய செய்திகள்</h2>
+
+    {% for news in data %}
+        {% include "news-card-tm.html" %}
+    {% endfor %}
+{% endblock %}

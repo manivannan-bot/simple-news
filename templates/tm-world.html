@@ -1,0 +1,9 @@
+{% extends 'wrapper.html' %}
+{% block title %}World - NewsHint Tamil{% endblock %}
+{% block rellink %}tamil/world{% endblock %}
+{% block content %}
+<h2>உலகம்</h2>
+    {% for news in data %}
+        {% include "news-card-tm.html" %}
+    {% endfor %}
+{% endblock %}

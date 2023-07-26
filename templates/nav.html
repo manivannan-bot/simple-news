@@ -1,0 +1,55 @@
+<header>
+    <div class="navsection">
+        <span class="openx" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+        <div id="mySidenav" class="sidenav">
+            <span class="closebtn" onclick="closeNav()">
+                &times;
+            </span>
+            <div class="langs">
+                <button class="lang-btn" id="en-button" type="button" onclick="engClick()">English</button>
+                <button class="lang-btn" id="tm-button" style="font-family: 'Noto Sans Tamil';" type="button"
+                    onclick="tmClick()">தமிழ்</button>
+            </div>
+            <div class="lang-list">
+                <div id="eng-list" class="english-list">
+                    <a href="/"> Home</a>
+                    <a href="/en/top"> Top Stories</a>
+                    <a href="/en/india">India</a>
+                    <a href="/en/world"> World</a>
+                    <a href="/en/politics"> Politics</a>
+                    <a href="/en/business"> Business</a>
+                    <a href="/en/tech"> Technology</a>
+                    <a href="/en/sports"> Sports</a>
+                    <a href="/en/entertainment"> Entertainment</a>
+                </div>
+                <div id="tm-list" style="font-family: 'Noto Sans Tamil';display: none;" class="tamil-list">
+                    <a href="/tamil">முகப்பு</a>
+                    
+                    <a href="/tamil/top">முக்கிய செய்திகள்</a>
+                <a href="/tamil/india">இந்தியா</a>
+                    <a href="/tamil/world">உலகம்</a>
+                    <a href="/tamil/politics">அரசியல்</a>
+                    <a href="/tamil/business">வணிகம்</a>
+                    <a href="/tamil/tech">தொழில்நுட்பம்</a>
+                    <a href="/tamil/sports">விளையாட்டு</a>
+                    <a href="/tamil/entertainment">பொழுதுபோக்கு</a>
+                </div>
+            </div>
+            <div class="socials">
+                <a href="https://twitter.com/Newshintin"><i class="fa fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com/newshint.in/"><i class="fa fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/people/News-Hint/100078118757961/"><i class="fa fa-facebook"></i>
+                    Facebook</a>
+                <a href="/about">About Us</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms-and-conditions">Terms and Conditions</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="logo-head" align="center">
+        <a href="/">
+            <img class="logo-head-image" src="{{url_for('static', filename='Logo.png')}}" alt="newshint logo">
+        </a>
+    </div>
+</header>

@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!--  working fine-->
+<!-- reduces lines used -->
+<!-- {% extends 'wrapper.html' %}
+{% block title %}Top{% endblock %}
+{% block content %}
+    {% for news in data %}
+        {% include "news-card.html" %}
+    {% endfor %}
+{% endblock %} -->
+
+<!-- {% extends 'wrapper.html' %}
+{% block title %}Tech{% endblock %}
+
+{% block content %}
+<h4>Home</h4>
+{% for news in data %}
+<div class="card">
+    <a href="{{news.source_url}}">
+        <div class="card-img">
+            <img src="{{news.image_url}}" alt="">
+        </div>
+    </a>
+    <div class="card-rest">
+
+        <h3><a href="{{news.source_url}}">{{ news.title }}</a></h3>
+        <p class="published_at">{{news.published_date}}</p>
+        <br>
+        <p class="card-news-description">
+            {{news.summary}}
+        </p>
+        <br>
+        <span>Source: {{news.source_name}}</span>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %} -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

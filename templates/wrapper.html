@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+       <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M6TZTRQ');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  maximum-scale=6.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="title" content="Newshint">
+    <meta name="description" content="NewsHint is a personalized news aggregator. We deliver verified facts as instant news and present exciting news
+    articles and stories through out website.">
+    <meta name="keywords" content="Newsapp, TamilNews, EnglishNews">
+    
+
+    
+    <meta name="google-site-verification" content="I14k3bVJBg-NXbY0fT6_ZuwZ6zDR4mQygRCXCU4-Y2M" />
+
+    <meta name="revisit-after" content="1 days">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    <link rel="dns-prefetch" href="//www.gstatic.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//static.zdassets.com">
+    <link rel="dns-prefetch" href="//s7.addthis.com">
+    <link rel="dns-prefetch" href="//connect.facebook.net">
+    <link rel="dns-prefetch" href="//graph.facebook.com">
+
+    
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    
+
+
+    <meta property="og:image" content="{{url_for('static', filename='twitter_logo.png')}}">
+    <meta property="og:title" content="NewsHint">
+    <meta name="og:description" content="NewsHint is a personalized news aggregator. We deliver verified facts as instant news and present exciting news
+    articles and stories through out website.">
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src *;
+   img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *;
+   style-src  'self' 'unsafe-inline' *">
+
+    <link rel="canonical" href="https://newshint.in/{% block rellink %}{%endblock%}"/>
+    
+    
+    
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='twitter_logo_r.png')}}">
+    
+    <!-- twitter metatags -->
+    <meta name="twitter:title" content="NewsHint">
+    <meta name="twitter:image" content="{{url_for('static', filename='twitter_logo.png')}}">
+    <meta name="twitter:description" content="NewsHint is a personalized news aggregator. We deliver verified facts as instant news and present exciting news
+    articles and stories through out website.">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" sizes="512x512" href="{{url_for('static', filename='twitter_logo_r.png')}}" type="image/png">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" id="dynamic-css">
+    <!-- font links -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans Tamil' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans Tamil Supplement' rel='stylesheet'>
+
+    <meta name="google" content="notranslate">
+
+    <script src="https://kit.fontawesome.com/d191a98b5d.js" crossorigin="anonymous"></script>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1086225648287107"
+     crossorigin="anonymous"></script>
+     
+     
+     <!-- Google tag (gtag.js) -->
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=G-5P7BGD1PEW"></script>-->
+    <!--<script>-->
+    <!--window.dataLayer = window.dataLayer || [];-->
+    <!--function gtag(){dataLayer.push(arguments);}-->
+    <!--gtag('js', new Date());-->
+
+    <!--gtag('config', 'G-5P7BGD1PEW');-->
+    <!--</script>-->
+    
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6TZTRQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    {% include 'nav.html' %}
+    <div class="wrapper">
+        <main role="main" class="container">
+            
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="{{url_for('static', filename='page.js')}}"></script>
+    <script>
+        var cssLink = document.createElement("link");
+        cssLink.href = "{{url_for('static', filename='style.css')}}";
+        cssLink.rel = "stylesheet";
+        cssLink.type = "text/css";
+
+        // Find the existing CSS link element
+        var existingCssLink = document.getElementById("dynamic-css");
+
+        // Replace the existing CSS link element with the new one
+        existingCssLink.parentNode.replaceChild(cssLink, existingCssLink);
+    </script>
+
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5P7BGD1PEW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5P7BGD1PEW');
+</script>
+
+
+
+</body>
+
+</html>

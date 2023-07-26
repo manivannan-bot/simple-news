@@ -1,0 +1,19 @@
+<article class="card" itemscope itemtype="http://schema.org/Article" aria-label="news headline">
+    <div class="card-img" role="img" aria-label="{{ news.title }}">
+        <img src="{{news.image_url}}" alt="{{ news.title }}">
+    </div>
+    <div class="card-rest">
+        <h3 class="news_title" aria-label="news headline">
+            {{ news.title }}
+        </h3>
+        <p class="published_at" aria-label="news published date">{{ news.published_at }}</p>
+        <br>
+        <p class="card-news-description" aria-label="Go to news website">{{ news.summary }}</p>
+        <span class="source-name">
+            read more at
+            <a href="{{ news.source_url }}" target="_blank" itemprop="author" aria-label="Go to news website" class="source-name-link">
+                 {{ news.source_name }}
+            </a>
+        </span>
+    </div>
+</article>

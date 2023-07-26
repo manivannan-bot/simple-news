@@ -1,0 +1,10 @@
+{% extends 'wrapper.html' %}
+{% block title %}Cinema - NewsHint Tamil{% endblock %}
+{% block rellink %}tamil/entertainment{% endblock %}
+
+{% block content %}
+<h2>பொழுதுபோக்கு</h2>
+    {% for news in data %}
+        {% include "news-card-tm.html" %}
+    {% endfor %}
+{% endblock %}
