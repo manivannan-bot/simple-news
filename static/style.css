@@ -204,23 +204,37 @@ header a {
 
 }
 
-.socials {
-    height: fit-content;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    word-wrap: break-word;
-    margin-top: 10px;
+.others {
     border-top: 1px solid white;
+    padding-top:12px;
+    margin-left:-20px;
+    display: grid;
+    grid-template-columns:1fr auto;
+    gap:0.53em;
+    margin-top:20px;
 }
 
-.socials a {
+.company-pages{
+    grid-column:1;
+}
+
+.social-links{
+    grid-column:2;
+    row-gap:0.2em
+
+}
+.others a {
     text-decoration: none;
     font-size: 14px;
     width: fit-content;
-    display: flex;
-    gap: 7px;
 
 }
+
+
+.socials {
+    margin-right:20px
+}
+
 
 
 
