@@ -79,7 +79,7 @@ header {
     top: 0;
     padding-bottom: 0px;
     position: fixed;
-    z-index:200;
+    z-index: 200;
 
 }
 
@@ -131,9 +131,11 @@ header {
 .source-name-link:hover {
     color: dodgerblue
 }
+
 .source-name a {
-    color: #44444d !important;  
+    color: #44444d !important;
 }
+
 .logo-head {
     margin: 0 auto;
     /* width: %; */
@@ -201,29 +203,28 @@ header a {
     font-size: 36px;
     margin-left: 50px;
     cursor: pointer;
-    color:whitesmoke
-
+    color: whitesmoke
 }
 
 .others {
     border-top: 1px solid white;
-    padding-top:12px;
-    margin-left:-20px;
+    padding-top: 12px;
+    margin-left: -20px;
     display: grid;
-    grid-template-columns:1fr auto;
-    gap:0.53em;
-    margin-top:20px;
+    grid-template-columns: 1fr auto;
+    gap: 0.53em;
+    margin-top: 20px;
 }
 
-.company-pages{
-    grid-column:1;
+.company-pages {
+    grid-column: 1;
 }
 
-.social-links{
-    grid-column:2;
-    row-gap:0.2em
-
+.social-links {
+    grid-column: 2;
+    row-gap: 0.2em
 }
+
 .others a {
     text-decoration: none;
     font-size: 14px;
@@ -233,9 +234,8 @@ header a {
 
 
 .socials {
-    margin-right:20px
+    margin-right: 20px
 }
-
 
 
 
@@ -319,10 +319,12 @@ header a {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
 }
-.tamil-list{
+
+.tamil-list {
     margin-top: 10px;
 
 }
+
 .cat-title {
     font-family: Helvetica;
 }
@@ -339,21 +341,7 @@ header a {
     font-weight: bolder;
 }
 
-#loader {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    z-index: 9999;
-  }
-
-  .card-bottom {
+.card-bottom {
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -363,7 +351,7 @@ header a {
     position: relative;
     /* position: absolute; */
     /* display: inline-block; */
-    width:200px;
+    width: 200px;
     background: white;
 
 }
@@ -373,11 +361,11 @@ header a {
     /* padding: 8px 16px; */
     border: none;
     cursor: pointer;
-    margin:auto;
+    margin: auto;
 }
 
-.share-button i{
-    margin-top:10px;
+.share-button i {
+    margin-top: 10px;
     font-size: 16px;
 }
 
@@ -385,11 +373,12 @@ header a {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     padding: 12px;
 }
 
-.share-options a, .share-options button {
+.share-options a,
+.share-options button {
     display: block;
     margin-bottom: 8px;
     text-align: center;
@@ -418,7 +407,7 @@ header a {
 
 .fa-twitter {
     color: dodgerblue;
-    margin-left:2px ;
+    margin-left: 2px;
 }
 
 
@@ -432,7 +421,7 @@ header a {
 
 .copy-btn {
     /* padding: 1em; */
-    padding:3px;
+    padding: 3px;
     text-align: center;
     background: inherit;
     font-size: 10px;
@@ -464,35 +453,36 @@ header a {
         margin: 0 auto;
         background: whitesmoke;
     }
+
     .others {
         border-top: 1px solid white;
-        padding-top:12px;
-        margin-left:-20px;
+        padding-top: 12px;
+        margin-left: -20px;
         display: grid;
-        grid-template-columns:1fr auto;
-        gap:0.53em;
-        margin-top:20px;
+        grid-template-columns: 1fr auto;
+        gap: 0.53em;
+        margin-top: 20px;
     }
-    
-    .company-pages{
-        grid-column:1;
+
+    .company-pages {
+        grid-column: 1;
     }
-    
-    .social-links{
-        grid-column:2;
-        row-gap:0.2em
-    
+
+    .social-links {
+        grid-column: 2;
+        row-gap: 0.2em
     }
+
     .others a {
         text-decoration: none;
         font-size: 14px;
         width: fit-content;
-    
+
     }
-    
-    
+
+
     .socials {
-        margin-right:20px
+        margin-right: 20px
     }
 
     .card-bottom {
@@ -500,81 +490,82 @@ header a {
         flex-direction: row;
         gap: 5px;
     }
-    
+
     .share-dropdown {
         position: relative;
         /* position: absolute; */
         /* display: inline-block; */
-        width:200px;
+        width: 200px;
         background: white;
-    
+
     }
-    
+
     .share-button {
         /* position: relative; */
         /* padding: 8px 16px; */
         border: none;
         cursor: pointer;
-        margin:auto;
+        margin: auto;
     }
-    
-    .share-button i{
-        margin-top:10px;
+
+    .share-button i {
+        margin-top: 10px;
         font-size: 16px;
     }
-    
+
     .share-options {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         padding: 12px;
     }
-    
-    .share-options a, .share-options button {
+
+    .share-options a,
+    .share-options button {
         display: block;
         margin-bottom: 8px;
         text-align: center;
     }
-    
+
     .share-options img {
         width: 24px;
         height: 24px;
     }
-    
+
     .show {
         display: block;
     }
-    
+
     .d-links {
         display: grid;
         grid-template-columns: 1fr auto;
         gap: 1em;
     }
-    
+
     .d-links i {
         grid-column: 1;
         font-size: 20px;
         text-align: end;
     }
-    
+
     .fa-twitter {
         color: dodgerblue;
-        margin-left:2px ;
+        margin-left: 2px;
     }
-    
-    
+
+
     .fa-facebook-f {
         color: #4267B2;
     }
-    
+
     .fa-telegram {
         color: #0088cc;
     }
-    
+
     .copy-btn {
         /* padding: 1em; */
-        padding:3px;
+        padding: 3px;
         text-align: center;
         background: inherit;
         font-size: 10px;
