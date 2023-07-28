@@ -79,6 +79,7 @@ header {
     top: 0;
     padding-bottom: 0px;
     position: fixed;
+    z-index:200;
 
 }
 
@@ -352,6 +353,93 @@ header a {
     z-index: 9999;
   }
 
+  .card-bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.share-dropdown {
+    position: relative;
+    /* position: absolute; */
+    /* display: inline-block; */
+    width:200px;
+    background: white;
+
+}
+
+.share-button {
+    /* position: relative; */
+    /* padding: 8px 16px; */
+    border: none;
+    cursor: pointer;
+    margin:auto;
+}
+
+.share-button i{
+    margin-top:10px;
+    font-size: 16px;
+}
+
+.share-options {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px;
+}
+
+.share-options a, .share-options button {
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.share-options img {
+    width: 24px;
+    height: 24px;
+}
+
+.show {
+    display: block;
+}
+
+.d-links {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1em;
+}
+
+.d-links i {
+    grid-column: 1;
+    font-size: 20px;
+    text-align: end;
+}
+
+.fa-twitter {
+    color: dodgerblue;
+    margin-left:2px ;
+}
+
+
+.fa-facebook-f {
+    color: #4267B2;
+}
+
+.fa-telegram {
+    color: #0088cc;
+}
+
+.copy-btn {
+    /* padding: 1em; */
+    padding:3px;
+    text-align: center;
+    background: inherit;
+    font-size: 10px;
+    border: none;
+    width: fit-content;
+    cursor: pointer;
+}
 
 @media (max-width: 480px) {
     .cat-title {
@@ -376,23 +464,123 @@ header a {
         margin: 0 auto;
         background: whitesmoke;
     }
-
-    .socials {
-        display: grid;
-        grid-template-columns: 100px auto;
-        padding: 1px;
-        /* display: flex;
-        flex-direction: column;
-        text-align: center; */
-        /* gap: 1em; */
-        margin-right: 20px;
+    .others {
         border-top: 1px solid white;
-
+        padding-top:12px;
+        margin-left:-20px;
+        display: grid;
+        grid-template-columns:1fr auto;
+        gap:0.53em;
+        margin-top:20px;
+    }
+    
+    .company-pages{
+        grid-column:1;
+    }
+    
+    .social-links{
+        grid-column:2;
+        row-gap:0.2em
+    
+    }
+    .others a {
+        text-decoration: none;
+        font-size: 14px;
+        width: fit-content;
+    
+    }
+    
+    
+    .socials {
+        margin-right:20px
     }
 
-    .socials a {
+    .card-bottom {
         display: flex;
-        gap: 7px;
+        flex-direction: row;
+        gap: 5px;
+    }
+    
+    .share-dropdown {
+        position: relative;
+        /* position: absolute; */
+        /* display: inline-block; */
+        width:200px;
+        background: white;
+    
+    }
+    
+    .share-button {
+        /* position: relative; */
+        /* padding: 8px 16px; */
+        border: none;
+        cursor: pointer;
+        margin:auto;
+    }
+    
+    .share-button i{
+        margin-top:10px;
+        font-size: 16px;
+    }
+    
+    .share-options {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px;
+    }
+    
+    .share-options a, .share-options button {
+        display: block;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+    
+    .share-options img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .show {
+        display: block;
+    }
+    
+    .d-links {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1em;
+    }
+    
+    .d-links i {
+        grid-column: 1;
+        font-size: 20px;
+        text-align: end;
+    }
+    
+    .fa-twitter {
+        color: dodgerblue;
+        margin-left:2px ;
+    }
+    
+    
+    .fa-facebook-f {
+        color: #4267B2;
+    }
+    
+    .fa-telegram {
+        color: #0088cc;
+    }
+    
+    .copy-btn {
+        /* padding: 1em; */
+        padding:3px;
+        text-align: center;
+        background: inherit;
+        font-size: 10px;
+        border: none;
+        width: fit-content;
+        cursor: pointer;
     }
 
     html,

@@ -116,3 +116,37 @@ changeStyles(routes)
 
 
 
+function toggleDropdown(button) {
+  var dropdown = button.nextElementSibling;
+  dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+}
+
+// function copyLink() {
+//   var linkToCopy = document.getElementById('hidden-source').innerText;
+//   navigator.clipboard.writeText(linkToCopy)
+//       .then(function () {
+//           alert(linkToCopy+' copied!');
+//       })
+//       .catch(function (error) {
+//           console.error("Failed to copy link: ", error);
+//       });
+// }
+
+
+function copyLink(url) {
+  // Create a temporary input element to copy the URL to clipboard
+  var tempInput = document.createElement('input');
+  tempInput.setAttribute('value', url);
+  document.body.appendChild(tempInput);
+
+  // Copy the URL from the input element
+  tempInput.select();
+  document.execCommand('copy');
+
+  // Remove the temporary input element
+  document.body.removeChild(tempInput);
+
+  // Show a notification or do any other action after copying (optional)
+  alert('Link copied : '+url);
+}
+

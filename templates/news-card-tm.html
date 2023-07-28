@@ -11,11 +11,35 @@
         <p class="card-news-description" style="font-family: 'Noto Sans Tamil';color:#4e4e4e" aria-label="news summary">
             {{ news.summary }}
         </p>
-        <span class="source-name">
-            read more at
-            <a href="{{ news.source_url }}" target="_blank" itemprop="author" class="source-name-link" aria-label="Go to news website">
-                  {{ news.source_name }}
-            </a>
-        </span>
+        <div class="card-bottom">
+            <span class="source-name">
+                <a href="{{ news.source_url }}" target="_blank" itemprop="author" aria-label="Go to news website"
+                    class="source-name-link">
+                    {{ news.source_name }}
+                </a>
+            </span>
+          
+            <div class="share-dropdown">
+                <span class="share-button" aria-label="Share Button" onclick="toggleDropdown(this)">
+                    <i class="fa fa-share-alt"></i>
+                </span>
+                <div class="share-options" style="display: none;">
+
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ news.source_url }}" target="_blank" class="d-links">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/intent/tweet?url={{ news.source_url }}" target="_blank" class="d-links">
+                        <i class="fa fa-twitter"></i> 
+                    </a>
+                    <a href="https://telegram.me/share/url?url={{ news.source_url }}" target="_blank" class="d-links">
+                        <i class="fa fa-telegram"></i>
+                    </a>
+                    <button onclick="copyLink('{{ news.source_url }}')" aria-label="Copy Link" class="copy-btn">
+                        <i class="fa fa-link"></i>
+                    </button>
+                    <span style="display: none;" id="hidden-source">{{ news.source_url }}</span>
+                </div>
+            </div>
+        </div>
     </div>
 </article>
